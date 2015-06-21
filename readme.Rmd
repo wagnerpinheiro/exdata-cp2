@@ -1,0 +1,104 @@
+---
+title: "readme"
+author: "Wagner Pinheiro"
+date: "20 de junho de 2015"
+output: html_document
+---
+# Exploratory Data Analysis - Course Project 2
+
+
+```{r, message=FALSE}
+# load data
+source('loadLib.R')
+readData()
+```
+
+----------------
+
+
+## Question 1
+
+> Q: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
+> Using the base plotting system, make a plot showing the total PM2.5 emission 
+> from all sources for each of the years 1999, 2002, 2005, and 2008.
+
+```{r, message=FALSE}
+makePlot1()
+```
+
+A: Yes, total emissions decreased
+
+-----------
+
+## Question 2
+
+> Q: Have total emissions from PM2.5 decreased in the Baltimore City, Maryland
+> (fips == 24510) from 1999 to 2008? Use the base plotting system to make a plot
+> answering this question.
+
+```{r, message=FALSE}
+makePlot2()
+```
+
+A: Yes, emissions from PM2.5 decreased in the Baltimore City, Maryland.
+
+---------
+
+
+## Question 3
+
+> Q: Of the four types of sources indicated by the type (point, nonpoint, onroad,
+> nonroad) variable, which of these four sources have seen decreases in
+> emissions from 1999–2008 for Baltimore City? Which have seen increases in
+> emissions from 1999–2008? Use the ggplot2 plotting system to make a plot
+> answer this question.
+
+```{r, message=FALSE}
+makePlot3()
+```
+
+A: 'Nonpoint', 'onroad', 'nonroad' type's decreases in emissions from 1999-2008. 
+Only 'point' type emissions have increased in the same period
+
+---------
+
+
+## Question 4
+
+> Q: Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
+
+```{r, message=FALSE}
+makePlot4()
+```
+
+A: Emissions from coal combustion drecreased at low rates over time.
+
+---------
+
+
+## Question 5
+
+> Q: How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+
+```{r, message=FALSE}
+makePlot5()
+```
+
+A: Emissions declined at high rates between 1999-2002, and it is in continuous decline.
+
+---------
+
+
+## Question 6
+
+> Q: Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == 06037). Which city has seen greater changes over time in motor vehicle emissions?
+
+```{r, message=FALSE}
+makePlot6()
+```
+
+A: There is a long road to L.A. decreased emissions.
+
+
+---------
+
